@@ -53,7 +53,7 @@ async function sendEmail(musicas) {
 
     const info = await transporter.sendMail({
       from: `"Spotify Top Music" <${process.env.EMAIL_USER}>`, // Remetente
-      to: 'lygianmonteiro@gmail.com', // Lista de destinatários
+      to: 'seuemail@dominio.com', // Lista de destinatários
       subject: 'Top 100 Músicas Mais Tocadas no Spotify - 2024', // Assunto
       text: 'Conteúdo do e-mail em texto simples', // Corpo do e-mail em texto simples
       html: `
